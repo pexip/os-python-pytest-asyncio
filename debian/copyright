@@ -1,0 +1,27 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pytest-asyncio
+Upstream-Contact: https://github.com/pytest-dev/pytest-asyncio/issues
+Source: https://github.com/pytest-dev/pytest-asyncio/releases
+ git://github.com/pytest-dev/pytest-asyncio
+
+Files: *
+Copyright: Tin Tvrtković <tinchester@gmail.com>
+License: Apache-2.0
+Comment:
+ Copyright holder assumed from author hints in <setup.py>.
+
+Files: debian/*
+Copyright: 2018-2018, Jonas Smedegaard <dr@jones.dk>
+License-Grant:
+ This program is free software;
+ you can redistribute it and/or modify it
+ under the terms of the GNU General Public License
+ as published by the Free Software Foundation;
+ either version 3 of the License, or (at your option) any later version.
+License: GPL-3+
+
+License: Apache-2.0
+License-Reference: /usr/share/common-licenses/Apache-2.0
+
+License: GPL-3+
+License-Reference: /usr/share/common-licenses/GPL-3

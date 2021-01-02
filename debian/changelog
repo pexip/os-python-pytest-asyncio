@@ -1,0 +1,80 @@
+python-pytest-asyncio (0.14.0-5) unstable; urgency=medium
+
+  * drop patch 2001 and depend on newer python3-pytest (not older);
+    closes: bug#977049, thanks to Christian Kastner
+  * declare compliance with Debian Policy 4.5.1
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 02 Jan 2021 23:28:27 +0100
+
+python-pytest-asyncio (0.14.0-4) unstable; urgency=medium
+
+  * enable autopkgtest
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 27 Aug 2020 20:45:05 +0200
+
+python-pytest-asyncio (0.14.0-3) unstable; urgency=medium
+
+  * move maintenance to salsa debian group:
+    + update Vcs-* fields
+    + set myself as maintainer (not Cryptocoin Team)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 27 Aug 2020 13:30:23 +0200
+
+python-pytest-asyncio (0.14.0-2) unstable; urgency=medium
+
+  * copyright: update coverage
+  * add patch 2001 to use older pytest;
+    closes: bug#969050, thanks to Rebecca N. Palmer
+  * fix (build-)depend on python3-async-generator;
+    fix build-depend on python3-hypothesis python3-pytest;
+    thanks to Rebecca N. Palmer (see bug#969050)
+  * add patch 2002 to register mark with pytest
+  * ignore testsuite failures for now
+    (as accidentally done previously, less loudly)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 27 Aug 2020 13:06:59 +0200
+
+python-pytest-asyncio (0.14.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Jonas Smedegaard ]
+  * simplify source script copyright-chceck
+  * use debhelper compatibility level 13 (not 9);
+    build-depend on debhelper-compat (not debhelper)
+  * declare compliance with Debian Policy 4.5.0
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 25 Aug 2020 17:36:50 +0200
+
+python-pytest-asyncio (0.10.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release.
+    + Pytest 4.1 support.
+      Closes: Bug#934484. Thanks to David Steele.
+
+  [ Jonas Smedegaard ]
+  * Declare compliance with Debian Policy 4.4.0.
+  * Set Rules-Requires-Root: no.
+  * Update watch file:
+    + Simplify regular expressions.
+    + Rewrite usage comment.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Sep 2019 12:39:12 +0200
+
+python-pytest-asyncio (0.9.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release.
+    + Python 3.7 support.
+    + Remove ProcessPoolExecutor support.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 10 Aug 2018 11:59:05 +0200
+
+python-pytest-asyncio (0.8.0-1) unstable; urgency=low
+
+  * Initial packaging release.
+    Closes: bug#886338.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 27 Jun 2018 11:38:33 +0200
