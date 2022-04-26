@@ -1,7 +1,8 @@
 Source: python-pytest-asyncio
 Section: python
 Priority: optional
-Maintainer: Jonas Smedegaard <dr@jones.dk>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Jonas Smedegaard <dr@jones.dk>
 Build-Depends:
  debhelper-compat (= 13),
  dh-python,
@@ -16,6 +17,7 @@ Vcs-Browser: https://salsa.debian.org/debian/python-pytest-asyncio
 Homepage: https://github.com/pytest-dev/pytest-asyncio
 Rules-Requires-Root: no
 Testsuite: autopkgtest-pkg-python
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 
 Package: python3-pytest-asyncio
 Architecture: all
