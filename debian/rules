@@ -1,7 +1,11 @@
 #!/usr/bin/make -f
 
-# FIXME: stop ignore testsuite failures
-export PYBUILD_TEST_ARGS = || true
+PYBUILD_TEST_ARGS = --asyncio-mode=auto
+
+# TODO: enable more tests when pytest-trio is in Debian
+PYBUILD_TEST_ARGS += --ignore tests/trio/test_fixtures.py
+
+export PYBUILD_TEST_ARGS
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
+	dh $@ --buildsystem=pybuild

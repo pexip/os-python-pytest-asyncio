@@ -1,1 +1,1 @@
-  * stop ignore testsuite failures
+  * enable more tests when pytest-trio is in Debian

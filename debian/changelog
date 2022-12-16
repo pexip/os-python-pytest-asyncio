@@ -1,3 +1,85 @@
+python-pytest-asyncio (0.20.3-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+    * avoid usage of deprecated mark;
+      closes: bug#1026209, thanks to Timo Röhling
+
+  [ Jonas Smedegaard ]
+  * drop patch 2002, obsoleted by upstream changes
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 16 Dec 2022 14:35:17 +0100
+
+python-pytest-asyncio (0.19.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 16 Aug 2022 19:35:38 +0200
+
+python-pytest-asyncio (0.18.3-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * break python3-pytest-mock;
+    closes: bug#1012208, thanks to Julian Gilbey and Graham Inggs
+  * avoid module pytest_trio not in Debian
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 01 Jun 2022 14:40:22 +0200
+
+python-pytest-asyncio (0.18.2-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * stop ignore testsuite failures
+  * add autopkgtest
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 04 Mar 2022 17:34:23 +0100
+
+python-pytest-asyncio (0.18.1-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Jonas Smedegaard ]
+  * update git-buildpackage config:
+    + use DEP-14 branch names debian/latest upstream/latest
+      (not master upstream)
+    + add usage comment
+  * modernize build rules;
+    build-depend on dh-sequence-python3 pybuild-plugin-pyproject
+    (not dh-python)
+  * build-depend on python3-flaky python3-mypy
+  * tighten lintian overrides
+  * update copyright info: update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Feb 2022 16:14:26 +0100
+
+python-pytest-asyncio (0.16.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 08 Nov 2021 16:02:10 +0100
+
+python-pytest-asyncio (0.15.1-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Jonas Smedegaard ]
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+  * declare compliance with Debian Policy 4.6.0
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 22 Sep 2021 00:08:02 +0200
+
 python-pytest-asyncio (0.14.0-5) unstable; urgency=medium
 
   * drop patch 2001 and depend on newer python3-pytest (not older);

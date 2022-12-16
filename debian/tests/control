@@ -1,0 +1,10 @@
+Test-Command:
+# TODO: enable more tests when pytest-trio is in Debian
+ pytest-3 --asyncio-mode=auto --ignore tests/trio/test_fixtures.py
+Depends:
+ python3-async-generator,
+ python3-flaky,
+ python3-hypothesis,
+ python3-mypy,
+ python3-pytest,
+ python3-pytest-asyncio,
