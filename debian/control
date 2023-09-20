@@ -17,7 +17,7 @@ Vcs-Browser: https://salsa.debian.org/debian/python-pytest-asyncio
 Homepage: https://github.com/pytest-dev/pytest-asyncio
 Rules-Requires-Root: no
 Testsuite: autopkgtest-pkg-python
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: python3-pytest-asyncio
 Architecture: all
