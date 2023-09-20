@@ -1,3 +1,9 @@
+python-pytest-asyncio (0.20.3-1pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Wed, 20 Sep 2023 15:55:30 +0100
+
 python-pytest-asyncio (0.20.3-1) unstable; urgency=medium
 
   [ upstream ]
