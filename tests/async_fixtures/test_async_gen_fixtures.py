@@ -1,23 +1,21 @@
 import unittest.mock
 
 import pytest
-from async_generator import yield_, async_generator
 
 START = object()
 END = object()
 RETVAL = object()
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope="module")
 def mock():
     return unittest.mock.Mock(return_value=RETVAL)
 
 
 @pytest.fixture
-@async_generator
 async def async_gen_fixture(mock):
     try:
-        await yield_(mock(START))
+        yield mock(START)
     except Exception as e:
         mock(e)
     else:
@@ -38,3 +36,16 @@ async def test_async_gen_fixture_finalized(mock):
         assert mock.call_args_list[-1] == unittest.mock.call(END)
     finally:
         mock.reset_mock()
+
+
+class TestAsyncGenFixtureMethod:
+    is_same_instance = False
+
+    @pytest.fixture(autouse=True)
+    async def async_gen_fixture_method(self):
+        self.is_same_instance = True
+        yield None
+
+    @pytest.mark.asyncio
+    async def test_async_gen_fixture_method(self):
+        assert self.is_same_instance

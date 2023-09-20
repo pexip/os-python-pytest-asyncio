@@ -5,23 +5,28 @@ Source: https://github.com/pytest-dev/pytest-asyncio/releases
  git://github.com/pytest-dev/pytest-asyncio
 
 Files: *
-Copyright: Tin Tvrtković <tinchester@gmail.com>
+Copyright:
+  Tin Tvrtković <tinchester@gmail.com>
 License: Apache-2.0
+Reference: setup.py
 Comment:
  Copyright holder assumed from author hints in <setup.py>.
 
 Files: debian/*
-Copyright: 2018-2018, Jonas Smedegaard <dr@jones.dk>
+Copyright:
+  2018-2022  Jonas Smedegaard <dr@jones.dk>
 License-Grant:
- This program is free software;
+ This packaging is free software;
  you can redistribute it and/or modify it
  under the terms of the GNU General Public License
  as published by the Free Software Foundation;
- either version 3 of the License, or (at your option) any later version.
+ either version 3 of the License,
+ or (at your option) any later version.
 License: GPL-3+
+Reference: debian/copyright
 
 License: Apache-2.0
-License-Reference: /usr/share/common-licenses/Apache-2.0
+Reference: /usr/share/common-licenses/Apache-2.0
 
 License: GPL-3+
-License-Reference: /usr/share/common-licenses/GPL-3
+Reference: /usr/share/common-licenses/GPL-3
